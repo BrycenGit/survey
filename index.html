@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Survey</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Survey</h1>
+    <div>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="person1">What is your name?</label>
+          <input id="person1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+          <label for="born">Favorite Food?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="food" value="pizza" checked>
+              pizza
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="food" value="pasta">
+              pasta
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="food" value="friedChicken">
+              fried chicken
+            </label>
+          </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+    <div id="result">
+      <h2>Here is your results.</h2>
+      <p>
+        Hello <span id="person"></span>. I see that you were born on <span id="dob"></span>. I hear that your favorite food is <span id="favoriteFood"></span>!
+      </p>
+    </div>
+  </div>  
+</body>
+</html>
